@@ -5,8 +5,8 @@ Sollentuna Södra Scoutkårs medlemsregister v.3
 
 
 #installation:
-install git
-install node
+* install git
+* install node
 
 git clone https://github.com/SollentunaSodraScoutkar/smed3.git
 
