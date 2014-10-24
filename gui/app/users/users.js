@@ -22,7 +22,7 @@ scope.gridOptions = {
           { name:'Anv.namn', field: 'userName' },
           { name:'Epost', field: 'email' },
           { name:'Behörighet', field: 'access' },
-          { name: 'Ändra', cellTemplate: '<button ng-click="getExternalScopes().editUser(row.entity)" >Ändra</button>' }
+          { name: 'Ändra', cellTemplate: '<button  class="btn btn-info" ng-click="getExternalScopes().editUser(row.entity)" >Ändra</button>' }
         ],
         data : []
       };

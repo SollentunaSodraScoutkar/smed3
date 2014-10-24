@@ -1,11 +1,15 @@
 
         <div class="modal-header">
-            <h3 class="modal-title">I'm a modal!</h3>
+            <h3 class="modal-title">Användarinformation</h3>
         </div>
         <div class="modal-body">
-          <label>Användare: </label><input ng-model=selectedUser.firstName> <input ng-model=selectedUser.lastName><br>
-          <label>Användarnamn: </label><input ng-model=selectedUser.userName><br>
-          <label>E-post: </label><input ng-model=selectedUser.email><br>
+          <label>Användare: </label>
+          <input class="form-control" placeholder="Förnamn" ng-model=selectedUser.firstName> 
+          <input  class="form-control" placeholder="Efternamn" ng-model=selectedUser.lastName><br>
+          <label>Användarnamn: </label>
+          <input class="form-control" placeholder="Användarnamn" ng-model=selectedUser.userName><br>
+          <label>E-post: </label>
+          <input  class="form-control" placeholder="E-post" ng-model=selectedUser.email><br>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="ok()">OK</button>
