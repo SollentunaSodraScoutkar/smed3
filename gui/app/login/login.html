@@ -1,0 +1,13 @@
+
+<div ng-hide=loggedIn >
+<h3>Logga in</h3>
+	<label>Användarnamn: </label>
+	<input class="form-control" placeholder="Användarnamn" ng-model=username> 
+  	<label>Lösenord: </label>
+  	<input  class="form-control" placeholder="Lösenord" ng-model=password><br>
+    <button class="btn btn-primary" ng-click="login()">Logga in</button>
+</div>
+<div ng-show=loggedIn >
+<h3>Inloggad</h3>
+    <button class="btn btn-primary" ng-click="logout()">Logga ut</button>
+</div>
