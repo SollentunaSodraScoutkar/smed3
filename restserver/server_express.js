@@ -11,11 +11,17 @@ server.use(bodyparser());
 server.options('*', cors());
 
 function getAllUsers(req, res, next) {
-  //This will be replaced by call to SQL server DB
-  var data = JSON.parse(fs.readFileSync('userDBMock.json', 'utf8'));
-  console.log('Data:' + data);
-  res.send(data);
-  next();
+  if (req.headers && req.headers.authorization!='null'){
+    //This will be replaced by call to SQL server DB
+    var data = JSON.parse(fs.readFileSync('userDBMock.json', 'utf8'));
+    res.send(data);
+    next();    
+  }
+  else {
+    console.log("unauthorized!");
+    res.sendStatus(401);
+    next();
+  }
 }
 
 function login(req, res, next) {
