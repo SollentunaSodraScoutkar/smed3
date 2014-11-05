@@ -6,7 +6,10 @@
   "dependencies": {
     "jsonfile": "~2.0.0",
     "restify": "~2.8.3",
-    "jsonwebtoken": "^1.1.2"
+    "jsonwebtoken": "^1.1.2",
+    "express": "^4.10.1",
+    "body-parser": "^1.9.2",
+    "cors": "^2.5.0"
   },
   "devDependencies": {},
   "scripts": {

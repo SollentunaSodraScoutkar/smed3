@@ -40,7 +40,7 @@ scope.editUser = function(rowEntity) {
 }; 
 
 var loadUsers = function(){
- http({ method: 'GET', url: 'http://localhost:8080/users' }).
+ http({ method: 'GET', url: 'http://localhost:8083/users' }).
   success(function (data, status, headers, config) {
     scope.gridOptions.data = data;
   }).
