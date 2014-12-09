@@ -4,12 +4,19 @@
 angular.module('myApp', [
   'ngRoute',
   'ui.grid',
-  'myApp.view1',
+  'myApp.login',
   'myApp.view2',
   'myApp.users',
   'myApp.version',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'myApp.services'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  $routeProvider.otherwise({redirectTo: '/login'});
+}]).
+config(function ($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common["X-Requested-With"];
+	$httpProvider.interceptors.push('TokenInterceptor');
+    });
+
