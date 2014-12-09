@@ -39,6 +39,24 @@ scope.editUser = function(rowEntity) {
     });
 }; 
 
+scope.newUser = function() {
+    var modalWindow = modal.open({
+        templateUrl: "users/editUserModal.html",
+        controller: "UserModalController",
+        resolve:  {
+            selectedUser : function(){
+                return null;
+            }
+        }
+    });
+
+    modalWindow.result.then(function (selectedItem) {
+      alert("New user created!" + selectedItem);
+    }, function (){
+      alert("dismissed!");
+    });
+}; 
+
 var loadUsers = function(){
  http({ method: 'GET', url: 'http://localhost:8083/users' }).
   success(function (data, status, headers, config) {
