@@ -20,8 +20,18 @@ function getAllUsers(req, res, next) {
   next();
 }
 
+function saveUser(user){
+
+};
+
 server.get('/users', getAllUsers);
 server.head('/users', getAllUsers);
+server.post('(saveuser', function create(req, res, next) {
+  var user = req.data;
+  saveUser(user);
+   res.send(201);
+   return next();
+ });
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);

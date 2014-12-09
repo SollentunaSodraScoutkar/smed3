@@ -27,17 +27,15 @@ scope.gridOptions = {
         data : []
       };
 
-scope.editUser = function(rowEntity) {
-    var modalWindow = modal.open({
-        templateUrl: "users/editUserModal.html",
-        controller: "UserModalController",
-        resolve:  {
-            selectedUser : function(){
-                return rowEntity;
-            }
-        }
-    });
-}; 
+var saveUser = function(user){
+ http({ method: 'POST', url: 'http://localhost:8080/saveuser', data: user }).
+  success(function (data, status, headers, config) {
+    alert('user saved!');
+  }).
+  error(function (data, status, headers, config) {
+    alert("Failed to save user, Status" + status);
+  });    
+};
 
 var loadUsers = function(){
  http({ method: 'GET', url: 'http://localhost:8080/users' }).
@@ -48,6 +46,22 @@ var loadUsers = function(){
     alert("Data:" + data + ", Status" + status);
   });    
 };
+
+scope.editUser = function(rowEntity) {
+    var modalWindow = modal.open({
+        templateUrl: "users/editUserModal.html",
+        controller: "UserModalController",
+        resolve:  {
+            selectedUser : function(){
+                return rowEntity;
+            }
+        }
+    });
+
+    modalWindow.result.then(function(user){
+        saveUser(user);
+    })
+}; 
 
 loadUsers();
 
