@@ -17,8 +17,8 @@ scope.gridOptions = {
         enableSorting: true,
         enableFiltering: true,
         columnDefs: [
-          { name:'Namn', field: 'firstName' },
-          { name:'Efternamn', field: 'lastName' },
+          { name:'Namn', field: 'varFirstName' },
+          { name:'Efternamn', field: 'varSurName' },
           { name:'Anv.namn', field: 'userName' },
           { name:'Epost', field: 'email' },
           { name:'Behörighet', field: 'access' },
@@ -38,7 +38,7 @@ var saveUser = function(user){
 };
 
 var loadUsers = function(){
- http({ method: 'GET', url: 'http://localhost:8080/users' }).
+ http({ method: 'GET', url: 'http://localhost:1234/users' }).
   success(function (data, status, headers, config) {
     scope.gridOptions.data = data;
   }).

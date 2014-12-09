@@ -10,7 +10,7 @@ namespace NancyRestServer.Modules
     {
         private const string MyConnectionString = @"Server=MACMINI-PC\SQLEXPRESS;User Id=SMED;Password=SMED;Database=beemem";
 
-        public UserModule() : base("/user")
+        public UserModule() : base("/users")
         {
             Get["/"] = parameters => GetAllUsers();
         }
