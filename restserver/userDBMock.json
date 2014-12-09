@@ -1,23 +1,23 @@
 [
         {
-            "firstName": "Cox",
-            "lastName": "Carney",
+            "varFirstName": "Cox",
+            "varSurName": "Carney",
             "userName": "cc",
             "email":  "cox@carney.se",
             "createdDate": "2014-01-01",
             "access": "true"
         },
         {
-            "firstName": "Thomas",
-            "lastName": "Bindzau",
+            "varFirstName": "Thomas",
+            "varSurName": "Bindzau",
             "userName": "tb",
             "email":  "thomas@bindzau.se",
             "createdDate": "2014-08-04",
             "access": "false"
         },
         {
-            "firstName": "John",
-            "lastName": "Doe",
+            "varFirstName": "John",
+            "varSurName": "Doe",
             "userName": "jd",
             "email":  "john@doe.se",
             "createdDate": "2014-06-12",

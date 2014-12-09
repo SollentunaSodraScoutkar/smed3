@@ -17,8 +17,8 @@ scope.gridOptions = {
         enableSorting: true,
         enableFiltering: true,
         columnDefs: [
-          { name:'Namn', field: 'firstName' },
-          { name:'Efternamn', field: 'lastName' },
+          { name:'Namn', field: 'varFirstName' },
+          { name:'Efternamn', field: 'varSurName' },
           { name:'Anv.namn', field: 'userName' },
           { name:'Epost', field: 'email' },
           { name:'Behörighet', field: 'access' },
@@ -26,6 +26,26 @@ scope.gridOptions = {
         ],
         data : []
       };
+
+var saveUser = function(user){
+ http({ method: 'POST', url: 'http://localhost:8080/saveuser', data: user }).
+  success(function (data, status, headers, config) {
+    alert('user saved!');
+  }).
+  error(function (data, status, headers, config) {
+    alert("Failed to save user, Status" + status);
+  });    
+};
+
+var loadUsers = function(){
+ http({ method: 'GET', url: 'http://localhost:1234/users' }).
+  success(function (data, status, headers, config) {
+    scope.gridOptions.data = data;
+  }).
+  error(function (data, status, headers, config) {
+    alert("Data:" + data + ", Status" + status);
+  });    
+};
 
 scope.editUser = function(rowEntity) {
     var modalWindow = modal.open({
@@ -37,7 +57,6 @@ scope.editUser = function(rowEntity) {
             }
         }
     });
-}; 
 
 scope.newUser = function() {
     var modalWindow = modal.open({
