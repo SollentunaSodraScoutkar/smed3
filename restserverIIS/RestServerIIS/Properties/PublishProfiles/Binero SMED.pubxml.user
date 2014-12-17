@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbzUGTCCXckiskmtnwQBOYQAAAAACAAAAAAAQZgAAAAEAACAAAACJoOeZa1ExWlu298bB7k4lcqGX5QsP0WK1NydNKPX7bwAAAAAOgAAAAAIAACAAAACNWdwNJ1DvGgMSHev+3ujpU1leb1I5WgFqbTDd+0E50iAAAAAUo+XkY58RnUgQu6YUAPOcuyJCUBkihT74vpFtaeB0AEAAAABYS9xe54EYOiF3nniyOFVa0HjJDKxhRNhqr4yHl92XlXuH6ESAetsJtvDENPoJreiIw4XY8rtlnLrfrJnLEnqd</EncryptedPassword>
+    <_PublishTargetUrl>ftp://195.74.38.22</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Connections_Debug.config">
+      <publishTime>12/10/2014 16:58:38</publishTime>
+    </File>
+    <File Include="bin/Connections_Release.config">
+      <publishTime>12/10/2014 19:24:38</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>12/10/2014 16:48:54</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>12/10/2014 16:48:01</publishTime>
+    </File>
+    <File Include="bin/Nancy.Hosting.Aspnet.dll">
+      <publishTime>12/10/2014 16:48:26</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/10/2014 16:48:45</publishTime>
+    </File>
+    <File Include="bin/RestServerIIS.dll">
+      <publishTime>12/10/2014 19:20:02</publishTime>
+    </File>
+    <File Include="Connections_Debug.config">
+      <publishTime>12/10/2014 16:58:38</publishTime>
+    </File>
+    <File Include="Connections_Release.config">
+      <publishTime>12/10/2014 19:24:38</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/10/2014 16:48:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/10/2014 17:22:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

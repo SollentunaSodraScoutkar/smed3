@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestServerIIS", "RestServerIIS\RestServerIIS.csproj", "{68D6A2EF-43FE-431D-9E4D-8D6878CAE317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestServerIIS.Tests", "RestServerIIS.Tests\RestServerIIS.Tests.csproj", "{1986B42A-EBEF-45F5-8501-3E72108B15F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D6A2EF-43FE-431D-9E4D-8D6878CAE317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D6A2EF-43FE-431D-9E4D-8D6878CAE317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D6A2EF-43FE-431D-9E4D-8D6878CAE317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D6A2EF-43FE-431D-9E4D-8D6878CAE317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1986B42A-EBEF-45F5-8501-3E72108B15F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1986B42A-EBEF-45F5-8501-3E72108B15F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1986B42A-EBEF-45F5-8501-3E72108B15F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1986B42A-EBEF-45F5-8501-3E72108B15F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
