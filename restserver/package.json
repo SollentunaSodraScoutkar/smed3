@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "jsonfile": "~2.0.0",
-    "restify": "~2.8.3",
-    "jsonwebtoken": "^1.1.2",
-    "express": "^4.10.1",
-    "body-parser": "^1.9.2",
-    "cors": "^2.5.0"
+    "body-parser": "1.9.x",
+    "cors": "2.5.x",
+    "express": "4.10.x",
+    "jsonfile": "2.0.x",
+    "jsonwebtoken": "1.1.x",
+    "node-hashtable": "0.1.x"
   },
   "devDependencies": {},
   "scripts": {
