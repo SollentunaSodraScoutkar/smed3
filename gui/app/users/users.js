@@ -28,7 +28,7 @@ scope.gridOptions = {
       };
 
 var saveUser = function(user){
- http({ method: 'POST', url: 'http://localhost:8080/saveuser', data: user }).
+ http({ method: 'POST', url: 'http://localhost:8083/saveuser', data: user }).
   success(function (data, status, headers, config) {
     alert('user saved!');
   }).
@@ -38,7 +38,7 @@ var saveUser = function(user){
 };
 
 var loadUsers = function(){
- http({ method: 'GET', url: 'http://localhost:1234/users' }).
+ http({ method: 'GET', url: 'http://localhost:8083/users' }).
   success(function (data, status, headers, config) {
     scope.gridOptions.data = data;
   }).
@@ -58,7 +58,7 @@ scope.editUser = function(rowEntity) {
         }
     });
 
-scope.newUser = function() {
+s ÷cope.newUser = function() {
     var modalWindow = modal.open({
         templateUrl: "users/editUserModal.html",
         controller: "UserModalController",
