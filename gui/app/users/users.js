@@ -58,7 +58,7 @@ scope.editUser = function(rowEntity) {
         }
     });
 
-s ÷cope.newUser = function() {
+ scope.newUser = function() {
     var modalWindow = modal.open({
         templateUrl: "users/editUserModal.html",
         controller: "UserModalController",
@@ -68,6 +68,7 @@ s ÷cope.newUser = function() {
             }
         }
     });
+  };
 
     modalWindow.result.then(function (selectedItem) {
       alert("New user created!" + selectedItem);
@@ -88,8 +89,9 @@ var loadUsers = function(){
 
 loadUsers();
 
-        
-}]).controller('UserModalController', function ($scope, $modalInstance, selectedUser) {
+}])
+
+.controller('UserModalController', function ($scope, $modalInstance, selectedUser) {
 
   $scope.selectedUser = selectedUser;
 
